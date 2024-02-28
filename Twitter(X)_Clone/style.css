@@ -1,0 +1,749 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-color: black;
+	overflow: hidden;
+}
+.x_logo{
+	width: 30px;
+	height: 40px;
+}
+.container{
+	display: flex;
+	color: white;
+
+}
+
+/*CSS FOR FIRST PART OF THE CONTAINER.*/
+
+.first{
+	background-color: black;
+	width: 60%;
+	height: 100vh;
+}
+
+.sidebar{
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.sidebar ul{
+	list-style: none;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+.sidebar ul li{
+	display: flex;
+	margin-left: 50px;
+	align-items: center;
+	gap: 30px;
+	padding: 12px;
+}
+.sidebar ul li:hover{
+	border: 1px solid black;
+	background-color: #1e1a1a;
+	border-radius: 50px;
+	width: 160px;
+}
+.post_btn{
+	background-color: rgb(29, 155, 240);
+	border: 1px solid rgb(29, 155, 240);
+	border-radius: 50px;
+	margin-top: 15px;
+	width: 230px;
+	height: 55px;
+	color: white;
+	font-size: 20px;
+	font-weight: 700;
+	font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	position: relative;
+	left: 40px;
+}
+.footer{
+	background-color: black;
+	border-radius: 50px;
+	width: 250px;
+	height: 45px;
+	margin: 40px;
+	margin-top :20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 20px;
+	font-size: 15px;
+	padding: 5px;
+}
+.footer p{
+	color: grey;
+	font-weight: 400;
+}
+.footer:hover{
+	background-color: #1e1a1a;
+}
+.duplicate{
+	display: none;
+	margin-top: 10px;
+	margin-left: 60px;
+}
+
+@media screen and (max-width: 900px){
+	.first{
+		width: 200px;	
+
+	}
+	.sidebar ul p{
+		display: none;
+	}
+	.post_btn{
+		border-radius: 100px;
+		width: 60px;
+	}
+	.footer{
+		display: none;
+	}
+	.duplicate{
+		display: none;
+	}
+	.sidebar ul li:hover{
+	border: 1px solid black;
+	background-color: #1e1a1a;
+	border-radius: 50px;
+	width: 25px;
+	}
+}
+
+
+/*CSS FOR THE THIRD PART OF CONTAINER*/
+
+.third{
+	background-color: black;
+	border: 1px solid grey;
+	width: 70%;
+	height: 100vh;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+.top_navbar{
+	width: 100%;
+	height: 50px;
+	background-color: black;
+	position: fixed;
+}
+.top_navbar .search:hover{
+	background-color: black;
+	border: 1px solid blue;
+	box-shadow: 0px 0px 26px -13px white;
+}
+.top_navbar .search{
+	margin-left: 22px;
+	width: 318px;
+    height: 80%;
+    background-color: rgb(22, 24, 28);
+    border: 1px solid rgb(22, 24, 28);
+    border-radius: 50px;
+    position: relative;
+    top: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+    color: grey;
+    font-size: 17px;
+}
+@media (max-width: 1000px){
+	.top_navbar .search{
+		width: 250px;
+	}
+}
+.main_content{
+	/*background-color: red;*/
+	width: 100%;
+	height: 250vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-top: 50px;
+}
+.main_content .box1{
+	margin-top: 20px;
+	width: 318px;
+	height: 130px;
+	background-color: rgb(22, 24, 28);
+	border: 1px solid rgb(22, 24, 28);
+	border-radius: 20px;
+	position: relative;
+	left: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 15px;
+	gap: 15px;
+	font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.box1 .subscribe{
+	background-color: rgb(29, 155, 240);
+	border: 1px solid rgb(29, 155, 240);
+	border-radius: 50px;
+	color: white;
+	width: 120px;
+	height: 50px;
+	padding: 10px;
+	font-weight: 900;
+}
+.main_content .box2{
+	margin-top: 20px;
+	width: 318px;
+	height: 110px;
+	padding: 13px;
+	gap: 8px;
+	background-color: rgb(22, 24, 28);
+	border: 1px solid rgb(22, 24, 28);
+	border-radius: 20px;
+	position: relative;
+	left: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.main_content .box3{
+	margin-top: 20px;
+	width: 318px;
+	height: 90vh;
+	padding: 18px;
+	gap: 5px;
+	background-color: rgb(22, 24, 28);
+	border: 1px solid rgb(22, 24, 28);
+	border-radius: 20px;
+	position: relative;
+	left: 25px;
+	display: flex;
+	flex-direction: column;	
+	font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.box3 ul{
+	margin-top: 10px;
+	display: flex;
+	list-style-type: none;
+	justify-content: space-between;
+	align-items: center;
+	padding: 3px;
+	cursor: pointer;
+
+}
+.box3 ul:hover{
+	background-color: #242424;
+}
+.main_content .box4{
+	margin-top: 20px;
+	width: 318px;
+	height: 45vh;
+	padding: 20px;
+	gap: 1px;
+	background-color: rgb(22, 24, 28);
+	border: 1px solid rgb(22, 24, 28);
+	border-radius: 20px;
+	position: relative;
+	left: 25px;
+	display: flex;
+	flex-direction: column;	
+	font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.box4 ul{
+	display: flex;
+	list-style-type: none;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 20px;
+	
+}
+.box4 ul:hover{
+	background-color: #242424;
+	
+}
+.box4 ul button{
+	background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 85px;
+    height: 35px;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 650; 
+} 
+.box4 ul h3:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.third_footer{
+	padding: 1px 10px;
+	margin: 10px;
+	width: 350px;
+	margin-left: 19px;
+	margin-top: 30px;
+}
+.third_footer ul{
+	display: grid;
+	grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+	grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr; 
+	grid-gap: 10px;
+	list-style-type: none;
+	color: grey;
+	font-family:  TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	cursor: pointer;
+	font-size: 10px;
+}
+.third_footer ul li:hover{
+	text-decoration: underline;
+}
+@media (max-width: 1270px){
+	.main_content .box1{
+		width: 250px;
+		height: 170px
+	}
+	.main_content .box2{
+		width: 250px;
+		height: 120px
+	}
+	.main_content .box3{
+		width: 250px;
+		height: 650px;
+	}
+	.main_content .box4{
+		width: 250px;
+		height: 350px;
+	}
+	.third_footer{
+		width: 300px;
+	}
+}
+@media screen and (max-width: 1010px){
+	.third{
+		display: none;
+	}
+}
+@media screen and (max-width: 720px){
+	.first{
+		display: none;
+	}
+}
+
+
+/*CSS FOR SECOND PART OF THE CONTAINER.*/
+
+.second{
+	background-color: black;
+	border: 0.5px solid grey;
+	width: 100%;
+	height: 100vh;
+	overflow-y: scroll;
+	overflow-x: none;
+}
+.top_navbar_sec{
+	background-color: black;
+	width: 100%;
+	height: 50px;
+	position: sticky;
+}
+.top_navbar_sec ul{
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-weight: 700;
+	font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.top_navbar_sec ul li{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.top_navbar_sec ul li:hover{
+	background-color: #1e1a1a;
+    text-decoration: underline;
+    text-decoration-color: rgb(29, 155, 240);
+    text-decoration-thickness: 4px;
+    text-decoration-line: underline;
+    text-decoration-skip-ink: none;
+    text-underline-position: under;
+    text-underline-offset: 10px;
+}
+.div1{
+	border: 0.5px solid grey;
+	width: 100%;
+	height: 170px;
+}
+.div1 h2{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px;
+	color: grey;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.div1 p{
+	position: relative;
+	left: 60px;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	font-weight: 600;
+	font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.div1 ul{
+	list-style-type: none;
+}
+.div1 .part1{
+	border-bottom: 1px solid grey;
+	height: 100px;
+}
+.div1 .part2{
+	display: flex;
+	justify-content: space-evenly;
+	padding: 20px;
+}
+.div1 .part2 ul{
+	display: flex;
+	position: relative;
+	right: 37px;
+	gap: 5px;
+}
+.part2 ul li{
+	width: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100px;
+}
+.pre_post{
+	background-color: rgb(29, 155, 240);
+	border-radius: 50px;
+	padding: 16px;
+	display: flex;
+	align-items: center;
+	color: white;
+	font-weight: 700;
+	width: 62px;
+	height: 33px;
+	font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+}
+.part2 ul li:hover{
+	background-color: black;
+	box-shadow: 0px 0px 6px 0px rgb(29, 155, 240);
+}
+.div2{
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid grey;
+	color: rgb(29, 155, 240);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 400;
+	font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.div2:hover{
+	background-color: #0e0d0d;	
+}
+
+.div3{
+	border-bottom: 1px solid grey;
+	height: 430px;
+	position: relative;
+	font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+}
+.try{
+	position: absolute;
+	bottom: 0;
+}
+.try ul{
+	position: relative;
+	right: 10px;
+}
+.try ul li{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+ 	padding: 5px 15px;
+}
+.try ul li:hover{
+	border-radius: 100px;
+	box-shadow: inset 0px 0px 11px -3px rgb(29, 155, 240);
+}
+.try1 ul{
+	position: relative;
+	bottom: 34px;
+}
+.try1 ul li{
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	padding: 5px 15px;
+}
+.try1 ul li:hover{
+	border-radius: 100px;
+	box-shadow: inset 0px 0px 11px -3px rgb(29, 155, 240);
+}
+.div3 ul{
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px;
+	color: grey;
+	font-size: 15px;
+}
+.div3 p{
+	padding: 10px;
+	position: relative;
+	bottom: 20px;
+	left: 70px;
+}
+.div3 .img_place{
+	width: 432px;
+    height: 227px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 0px;
+    margin: 20px;
+    position: relative;
+    bottom: 30px;
+    object-fit: contain;
+}
+.img_place img{
+	width: 431px;
+    height: 230px;
+    border-radius: 20px;
+    border: 1px solid grey;
+}
+.div4{
+	border-bottom: 1px solid grey;
+	height: 430px;
+	font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+}
+.div4 ul{
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px;
+	color: grey;
+	font-size: 15px;
+}
+.div4 p{
+	padding: 10px;
+	position: relative;
+	bottom: 20px;
+	left: 70px;
+}
+.div4 .img_place{
+	width: 432px;
+    height: 227px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 0px;
+    margin: 20px;
+    position: relative;
+    bottom: 30px;
+    object-fit: contain;
+}
+
+.div5{
+	border-bottom: 1px solid grey;
+	height: 430px;
+	font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+}
+.div5 ul{
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px;
+	color: grey;
+	font-size: 15px;
+}
+.div5 p{
+	padding: 10px;
+	position: relative;
+	bottom: 20px;
+	left: 70px;
+}
+.div5 .img_place{
+	width: 432px;
+    height: 227px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 0px;
+    margin: 20px;
+    position: relative;
+    bottom: 30px;
+    object-fit: contain;
+}
+.div6{
+	border-bottom: 1px solid grey;
+	height: 430px;
+	font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+}
+.div6 ul{
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px;
+	color: grey;
+	font-size: 15px;
+}
+.div6 p{
+	padding: 10px;
+	position: relative;
+	bottom: 20px;
+	left: 70px;
+}
+.div6 .img_place{
+	width: 432px;
+    height: 227px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 0px;
+    margin: 20px;
+    position: relative;
+    bottom: 30px;
+    object-fit: contain;
+}
+.div7{
+	border-bottom: 1px solid grey;
+	height: 500px;
+	font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+}
+.div7 ul{
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px;
+	color: grey;
+	font-size: 15px;
+}
+.div7 p{
+	padding: 10px;
+	position: relative;
+	bottom: 20px;
+	left: 70px;
+}
+.div7 .img_place{
+	width: 432px;
+    height: 325px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 0px;
+    margin: 20px;
+    position: relative;
+    bottom: 30px;
+    object-fit: contain;
+}
+.div7 .img_place img{
+	height: 322px;
+}
+.sec_footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.sec_footer h4{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-top: 10px;
+	cursor: pointer;
+	font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+}
+
+
+.home_footer{
+	height: 50px;
+	border-bottom: 1px solid grey;
+	position: sticky;
+	display: flex;
+	justify-content: center;
+	display: none;
+}
+.home_footer ul{
+	display: flex;
+	list-style-type: none;
+}
+.home_footer ul li{
+	display: flex;
+	align-items: center;
+}
+.home_footer ul li:hover{
+	background-color: black;
+    box-shadow: rgb(29, 155, 240) 0px 0px 6px 0px;
+
+}
+@media screen and (max-width: 720px){
+	.home_footer{
+		display: flex;
+	}
+	.home_footer ul{
+		gap: 40px;
+	}
+	.img_place img{
+		width: 350px;
+	}
+	.div3 .img_place{
+		width: 350px;
+	}
+	.div4 .img_place{
+		width: 350px;
+	}
+	.div5 .img_place{
+		width: 350px;
+	}
+	.div6 .img_place{
+		width: 350px;
+	}
+	.div7 .img_place{
+		width: 350px;
+	}
+}
+
+
+/* Set the background color to grey */
+body {
+  background-color: #808080; /* dark grey */
+}
+
+/* Style the scrollbar */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #c0c0c0; /* light grey */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #696969; /* grey */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #808080; /* darker grey on hover */
+}
